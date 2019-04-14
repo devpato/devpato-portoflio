@@ -12,6 +12,43 @@
       height: 500px;
       animation: spin 10s linear infinite;
     }
+
+    .icons {
+      margin-top: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      a {
+        color: #fff;
+        i {
+          cursor: pointer;
+          font-size: 42px;
+          &.fa {
+            &-file-download:hover {
+              color: #00ad45;
+            }
+            &-stack-overflow:hover {
+              color: #f48024;
+            }
+            &-behance:hover {
+              color: #1769ff;
+            }
+            &-npm:hover {
+              color: rgb(168, 8, 8);
+            }
+            &-linkedin-in:hover {
+              color: lightblue;
+            }
+            &-trophy:hover {
+              color: goldenrod;
+            }
+            &-github:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
