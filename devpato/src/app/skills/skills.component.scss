@@ -1,0 +1,51 @@
+.skills {
+  background: #fff;
+  padding: 42px 0;
+  .container {
+    .title {
+      color: #000;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      font-size: 72px;
+      font-weight: 800;
+    }
+    .body {
+      color: #000;
+      display: flex;
+      justify-content: space-evenly;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+      .tech {
+        padding: 0 42px;
+        font-size: 28px;
+        font-weight: 600;
+        .title {
+          color: #000;
+          opacity: 0.8;
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+      .card {
+        cursor: pointer;
+        margin: 16px;
+        height: 400px;
+        padding: 32px;
+
+        &-title {
+          font-size: 32px;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        &-body {
+          padding: 0;
+        }
+
+        &:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+}
