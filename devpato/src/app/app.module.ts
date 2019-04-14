@@ -11,6 +11,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExpirienceComponent } from './expirience/expirience.component';
 import { SpaceComponent } from './space/space.component';
+import { MarsComponent } from './mars/mars.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SpaceComponent } from './space/space.component';
     PortfolioComponent,
     ContactComponent,
     ExpirienceComponent,
-    SpaceComponent
+    SpaceComponent,
+    MarsComponent
   ],
   imports: [
     BrowserModule,
