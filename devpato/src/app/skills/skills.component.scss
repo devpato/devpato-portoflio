@@ -1,51 +1,75 @@
 .skills {
-  background: #fff;
   padding: 42px 0;
-  .container {
-    .title {
-      color: #000;
-      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-      font-size: 72px;
-      font-weight: 800;
-    }
-    .body {
-      color: #000;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container {
       display: flex;
-      justify-content: space-evenly;
-      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-
-      .tech {
-        padding: 0 42px;
-        font-size: 28px;
-        font-weight: 600;
-        .title {
-          color: #000;
-          opacity: 0.8;
-          font-size: 40px;
-          font-weight: 800;
-        }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title {
+        color: #fff;
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        font-size: 72px;
+        font-weight: 800;
       }
-      .card {
-        cursor: pointer;
-        margin: 16px;
-        height: 400px;
-        padding: 32px;
+      .body {
+        color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 
-        &-title {
-          font-size: 32px;
-          font-weight: 600;
-          text-align: center;
-        }
-
-        &-body {
-          padding: 0;
-        }
-
-        &:hover {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .tech {
+          padding: 0 42px;
+          .title {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 800;
+          }
         }
       }
     }
+
+    .rocket img {
+      height: 500px;
+      animation: rocket 2s ease-in-out infinite;
+    }
+
+    .comet img {
+      position: absolute;
+      left: 0;
+      height: 200px;
+      animation: comet 10s ease-in-out infinite;
+    }
+
+    .window img {
+      height: 100vh;
+      width: 1000px;
+    }
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes comet {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatex(1100%);
   }
 }
