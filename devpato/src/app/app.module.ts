@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ExpirienceComponent } from './expirience/expirience.component';
 import { SpaceComponent } from './space/space.component';
 import { MarsComponent } from './mars/mars.component';
+import { CabinComponent } from './cabin/cabin.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MarsComponent } from './mars/mars.component';
     ContactComponent,
     ExpirienceComponent,
     SpaceComponent,
-    MarsComponent
+    MarsComponent,
+    CabinComponent
   ],
   imports: [
     BrowserModule,
