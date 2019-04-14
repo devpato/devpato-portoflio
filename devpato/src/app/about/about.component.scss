@@ -1,8 +1,12 @@
 .about {
-  background: #000;
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
   padding: 32px 0;
   height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
   .container {
+    width: 50%;
     .title {
       font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
       font-size: 72px;
@@ -16,5 +20,20 @@
         font-weight: 800;
       }
     }
+  }
+
+  .sun img {
+    height: 800px;
+    position: absolute;
+    top: 0;
+    -webkit-filter: drop-shadow(5px 5px 5px red);
+    filter: drop-shadow(5px 5px 5px orange);
+  }
+
+  .planet-2 img {
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
   }
 }
