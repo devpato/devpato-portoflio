@@ -1,3 +1,47 @@
 .mars {
-  height: 100vh;
+  .wrapper {
+    position: relative;
+
+    .ufo img {
+      position: absolute;
+      z-index: 1;
+      top: 400px;
+      left: 40%;
+      height: 400px;
+      animation: float-y 4s ease-in-out infinite;
+    }
+
+    .alien img {
+      position: absolute;
+      z-index: 2;
+      top: 588px;
+      left: 46%;
+      height: 200px;
+      animation: float-x 4s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes float-y {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float-x {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(-20px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
 }
