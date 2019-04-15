@@ -45,3 +45,65 @@
     transform: translatex(0px);
   }
 }
+
+@keyframes float-y-min {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float-x-min {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(-10px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+
+/*Media Queries*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 992px) {
+  .mars {
+    // padding-top: 380px;
+    .wrapper {
+      .mars img {
+        height: 100%;
+      }
+
+      .ufo img {
+        top: 80px;
+        height: 100px;
+        animation: float-y-min 4s ease-in-out infinite;
+      }
+
+      .alien img {
+        top: 120px;
+        height: 50px;
+        animation: float-x-min 4s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
