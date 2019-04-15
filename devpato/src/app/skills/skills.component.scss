@@ -6,6 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .counter {
+      font-size: 42px;
+      color: #dc3545;
+      font-weight: 600;
+    }
     .container {
       display: flex;
       flex-direction: column;
@@ -39,8 +45,13 @@
     }
 
     .rocket img {
+      cursor: pointer;
       height: 500px;
       animation: rocket 2s ease-in-out infinite;
+    }
+
+    .launch-me {
+      animation: launch 5s ease-in-out;
     }
 
     .comet img {
@@ -61,6 +72,28 @@
   }
   100% {
     transform: translatey(0px);
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes launch {
+  0% {
+    transform: translatey(0px);
+  }
+  100% {
+    transform: translatey(-1000%);
+    display: none;
   }
 }
 

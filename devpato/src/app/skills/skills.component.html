@@ -1,6 +1,11 @@
 <div class="skills">
   <div class="wrapper">
-    <div class="rocket">
+    <span class="counter" *ngIf="start">{{ counter }}</span>
+    <button class="btn btn-danger" (click)="launchRocket()">Launch Me</button>
+    <div
+      class="{{ launch ? 'launch-me' : '' }} rocket"
+      (click)="launchRocket()"
+    >
       <img src="../../assets/rocket.svg" alt="" />
     </div>
     <div class="container">
