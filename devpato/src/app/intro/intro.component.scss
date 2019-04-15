@@ -3,26 +3,20 @@
   .wrapper {
     height: 100%;
     display: flex;
+    justify-content: center;
     .title {
-      position: absolute;
-      z-index: 1;
-      top: 25%;
-      left: 35%;
       font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
       font-size: 72px;
       font-weight: 800;
-      //opacity: 0.4;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     .moon img {
       position: absolute;
       top: 42px;
       right: 25px;
       height: 200px;
-      z-index: 1;
     }
     .astronaut img {
       position: absolute;
@@ -38,7 +32,6 @@
       top: 10%;
       left: 20%;
       height: 300px;
-      z-index: 1;
     }
 
     .earth img {
@@ -46,7 +39,6 @@
       bottom: 10%;
       right: 4%;
       height: 400px;
-      z-index: 1;
     }
   }
 }
@@ -64,3 +56,55 @@
 }
 
 /*Media Queries*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 992px) {
+  .intro-page {
+    .wrapper {
+      .title {
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        margin: 0 16px;
+        font-size: 42px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .moon img {
+        height: 50px;
+      }
+
+      .astronaut img {
+        height: 75px;
+      }
+
+      .planet-1 img {
+        height: 75px;
+      }
+
+      .earth img {
+        height: 100px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}

@@ -68,3 +68,56 @@
     transform: translatex(1100%);
   }
 }
+
+/*Media Queries*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 992px) {
+  .skills {
+    height: 100%;
+    // padding-top: 380px;
+    .wrapper {
+      .container {
+        .body {
+          text-align: center;
+          margin: 0 16px;
+          .title,
+          .tech .title {
+            font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+            font-size: 42px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .rocket img {
+        height: 200px;
+      }
+
+      .comet img {
+        height: 75px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
