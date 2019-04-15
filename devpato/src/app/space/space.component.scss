@@ -514,7 +514,7 @@
     1807px 633px #fff, 1505px 1342px #fff, 338px 591px #fff, 593px 614px #fff,
     263px 1193px #fff, 1748px 593px #fff, 893px 142px #fff, 803px 1310px #fff,
     1916px 59px #fff, 251px 1777px #fff;
-  animation: animStar 150s linear infinite;
+  animation: animStar 20s linear infinite;
 }
 #stars3:after {
   content: " ";
@@ -556,6 +556,6 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(1000px);
+    transform: translateY(1800px);
   }
 }
