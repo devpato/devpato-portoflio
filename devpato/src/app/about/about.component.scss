@@ -14,7 +14,7 @@
         justify-self: center;
         width: 50%;
         .title {
-          font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+          font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
           font-size: 72px;
           font-weight: 800;
         }
@@ -28,6 +28,7 @@
 
   .sun img {
     height: 800px;
+    // width: 250px;
     position: absolute;
     top: 0;
     -webkit-filter: drop-shadow(5px 5px 5px red);
@@ -63,7 +64,7 @@
           margin: 0 16px;
           .title,
           .sub-title {
-            font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+            font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
             font-size: 42px;
             font-weight: 600;
           }
@@ -91,6 +92,11 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .about {
+    .sun img {
+      width: 250px;
+    }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
