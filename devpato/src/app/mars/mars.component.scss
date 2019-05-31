@@ -1,20 +1,17 @@
 .mars {
   .wrapper {
     position: relative;
-
     .ufo img {
+      margin-top: 100px;
       position: absolute;
-      z-index: 1;
-      top: 400px;
       left: 40%;
       height: 400px;
       animation: float-y 4s ease-in-out infinite;
     }
 
     .alien img {
+      margin-top: 100px;
       position: absolute;
-      z-index: 2;
-      top: 588px;
       left: 46%;
       height: 200px;
       animation: float-x 4s ease-in-out infinite;
@@ -71,9 +68,8 @@
 }
 
 /*Media Queries*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 992px) {
+/*Phones */
+@media only screen and (max-width: 600px) {
   .mars {
     // padding-top: 380px;
     .wrapper {
@@ -82,13 +78,45 @@
       }
 
       .ufo img {
-        top: 80px;
+        margin-top: 0;
+        top: 50px;
+        z-index: 1;
         height: 100px;
         animation: float-y-min 4s ease-in-out infinite;
       }
 
       .alien img {
-        top: 120px;
+        margin-top: 0;
+        top: 100px;
+        z-index: 2;
+        height: 50px;
+        animation: float-x-min 4s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 610px) {
+  .mars {
+    // padding-top: 380px;
+    .wrapper {
+      .mars img {
+        height: 100%;
+      }
+
+      .ufo img {
+        margin-top: 0;
+        top: 200px;
+        z-index: 1;
+        height: 100px;
+        animation: float-y-min 4s ease-in-out infinite;
+      }
+
+      .alien img {
+        margin-top: 0;
+        top: 260px;
+        z-index: 2;
         height: 50px;
         animation: float-x-min 4s ease-in-out infinite;
       }
@@ -110,12 +138,12 @@
 
       .ufo img {
         top: 200px;
-        height: 400px;
+        height: 300px;
       }
 
       .alien img {
-        top: 388px;
-        height: 200px;
+        top: 360px;
+        height: 150px;
       }
     }
   }
@@ -130,12 +158,12 @@
       }
 
       .ufo img {
-        top: 200px;
+        top: 300px;
         height: 400px;
       }
 
       .alien img {
-        top: 388px;
+        top: 488px;
         height: 200px;
       }
     }
